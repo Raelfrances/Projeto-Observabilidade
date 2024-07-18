@@ -102,7 +102,7 @@ $ pip install Flask prometheus_client
 ````plaintext
 $ cd python-app
 ````
-- Abra o arquivo app.py e analise o código fonte, perceba que existem algumas rotas criadas.
+Abra o arquivo app.py e analise o código fonte, perceba que existem algumas rotas criadas.
 A porta que está sendo exposta sua aplicação é a 3001,  caso seja necessário você pode alterar .
 
 2.3 Inicie sua aplicação e exponha-a em uma porta específica.
@@ -135,11 +135,11 @@ $ docker-compose ps
 
 
 ## Passo 6:
-- Acessando o Prometheus e verificando as métricas da aplicação
+Acessando o Prometheus e verificando as métricas da aplicação
 6.1 Acesse o painel Prometheus em seu navegador em http://localhost:9090.
 6.2 Verifique so o Prometheus está conseguindo acessar os dados da sua aplicação.
 
-- Clique no menu Status e depois em Targets.
+Clique no menu Status e depois em Targets.
 
 O status deve estar UP para ambos os targets (Prometheus e your-app)
 Caso o status da aplicação não esteja UP, certifique-se que a aplicação esteja rodando (Item 2.3).
@@ -152,7 +152,7 @@ Métrica de Duração da Função (app_function_duration_seconds): Esta métrica
 
 
 ## Passo 7: 
-- Configurando o Grafana
+Configurando o Grafana
 7.1. Acesse o painel Grafana em seu navegador em http://localhost:3000.
 7.2. Faça login com as credenciais padrão (username: admin, password: admin).
 7.3. Configure o Prometheus como uma fonte de dados:
@@ -165,7 +165,7 @@ Clique em "Save & Test".
 
 
 ## Passo 8:
-- Criando um Painel no Grafana
+Criando um Painel no Grafana
 8.1. Crie um novo painel clicando em "Create" e escolha "Dashboard".
 8.2. Clique em "Add new panel" e escolha "Graph".
 8.3. Configure sua consulta Prometheus para visualizar métricas da sua aplicação.
