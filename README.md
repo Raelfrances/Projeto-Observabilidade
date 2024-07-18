@@ -19,15 +19,24 @@ Criar um ambiente de observabilidade via Docker usando Prometheus e Grafana para
 - Clonar o repositório do Projeto, pois terá os arquivos necessários para realizar cada etapa do projeto.
 
 ### 1º Passo :
-Instalar em uma máquina Linux Ubunto o Docker compose:
+1.1 Instalar em uma máquina Linux Ubunto o Docker compose:
 ```plaintext
 
  # comando para instalação
  $ sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
  # após a execução deste comando, os usuários com acesso sudo poderão executar o docker-compose como um programa.
  $ sudo chmod +x /usr/local/bin/docker-compose
 
 ```
+1.2 Clonar este repositório
+```plaintext
 
+ # comando para clonar o repositório
+ $ git clone https://gitlab.com/patrickjcardoso/desafio-observabilidade.git
 
+ #  e acesse o diretório do laboratório:
+ $ cd desafio_o11y/observability-lab
+
+ ```
 
